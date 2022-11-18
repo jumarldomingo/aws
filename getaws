@@ -1,0 +1,2 @@
+curl https://ip-ranges.amazonaws.com/ip-ranges.json > $dir/aws-ip.json
+grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}/[0-9]{1,2}" $dir/aws-ip.json > $dir/aws-ip.txt
